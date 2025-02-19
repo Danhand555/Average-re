@@ -1,5 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { Calculator, PlusCircle, Trash2, RefreshCw, DollarSign } from 'lucide-react';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import InvestmentCalculator from './Main';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <InvestmentCalculator />
+  </React.StrictMode>
+);
 
 const InvestmentCalculator = () => {
   const [rows, setRows] = useState([
